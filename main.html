@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+<body>
+<div id="login-overlay">
+    <div class="login-box">
+        <h1>LOGIN</h1>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+
+            <button onclick="login()">LOGIN</button>
+        <span onclick="signup()">
+            Create Account
+        </span>
+    <p id="message"></p>
+</div>
+
+</div>
+        <section>
+            <nav>
+                <a href="#main"><img src="weblogo.png"></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#main">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+
+        <section class="front-page" id="main">
+            <div class="textbox">
+                <h1>Style That Speaks<br>Before You Do.</h1>
+            </div>
+        </section>
+
+        <section class="donno1">
+            <h1>EXPLORE YOUR STYLE</h1>
+        </section>
+
+        <section class="showcase">
+            <button class="arrow left" onclick="prevSlide()"><</button>
+
+            <div class="card small">
+                <img src="hoodie.png">
+                <h1>Hoodies</h1>
+                <p>Minimal and clean style for everyday wear.</p>
+            </div>
+
+            <div class="card active">
+                <img src="shirt.png">
+                <h1>Shirts</h1>
+                <p>Comfortable fit with modern streetwear vibes.</p>
+            </div>
+
+            <div class="card small">
+                <img src="pants.png">
+                <h1>Pants</h1>
+                <p>Relaxed silhouette made for movement and style.</p>
+            </div>
+
+            <button class="arrow right" onclick="nextSlide()">></button>
+        </section>
+        
+        <section class="donno2" id="about">
+            <h1>ABOUT<br>JNP CLOTHING</h1>
+        </section>
+
+        <section class="about">
+            <div class="display"> 
+                <img src="display.jpg">
+            </div>
+            <p>JNP Clothing was created with one simple goal — to
+            deliver style, comfort, and confidence in every piece. 
+            We believe clothing is more than just fabric; it’s a
+            way to express who you are without saying a word. 
+            <br><br>
+            Our designs focus on simplicity, quality, and
+            versatility. Whether it’s a casual shirt, a cozy hoodie, 
+            or everyday pants, each piece is made to fit
+            seamlessly into your lifestyle. We value clean
+            aesthetics, comfortable materials, and modern style
+            that never goes out of trend.
+            <br><br>
+            At JNP Clothing, we don’t just create outfits — we
+            create confidence. Our mission is to provide apparel
+            that helps you feel comfortable, look sharp, and
+            move with purpose every day. 
+            <br><br>
+            <b>Wear confidence. Wear JNP.</b></p>
+        </section>
+
+        <section class="donno3" id="contact">
+            <h1>CONTACT</h1>
+        </section>
+
+        <section class="contact">
+            <p>We’d love to hear from you! Whether you have questions about our
+            products, need help with an order, or want to collaborate, feel free to
+            reach out. 
+            <br><br>
+            <b>Email:</b> jnpclothing@gmail.com<br>
+            <b>Phone:</b> +63 912 345 6789<br>
+            <b>Location:</b> Philippines
+            <br><br>
+            You can also message us through our social media pages for
+            updates, promotions, and customer support. We aim to respond as quickly as possible because your time matters
+            to us. 
+            <br><br>
+            Thank you for choosing <b>JNP Clothing.</b></p>
+        </section>
+
+        <script src="main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,323 @@
+/* header */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding-top: 80px;
+}
+
+/* lock scroll */
+body.locked{
+    overflow: hidden;
+}
+
+/* screen overlay */
+#login-overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+/* login */
+.login-box{
+    width: 350px;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    text-align: center;
+    position: relative;
+}
+.login-box h1{
+    margin-bottom: 25px;
+    color: #222831;
+}
+
+/* inputs */
+.login-box input{
+    width: 100%;
+    padding: 14px;
+    margin: 10px -12px;
+    border: none;
+    background: #EEEEEE;
+    border-radius: 10px;
+    outline: none;
+}
+
+/* buttons */
+.login-box button{
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #222831;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-box button:hover{
+    background: #393E46;
+}
+
+/* create acc */
+.login-box span{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #222831;
+    font-weight: bold;
+}
+
+/* message */
+#message{
+    margin-top: 12px;
+    font-size: 14px;
+    color: red;
+}
+
+/* mainweb */
+nav{
+    display: flex;
+    padding: 1% 4%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222831;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 92%;
+    z-index: 1000;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.3s;
+}
+    nav ul li a:hover{
+    color: #ddbd71;
+}
+
+/* for smooth scroll & header */
+#main,
+#about,
+#contact{
+    scroll-margin-top: 90px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* front page */
+.front-page{
+    background-image: url(first.jpg);
+    background-size: cover;
+    height: 88vh;
+    width: 100%;
+}
+.textbox {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.textbox h1{
+    font-size: 75px;
+    font-family: sans-serif;
+}
+
+/* donno */
+.donno1{
+    background-color: #C9D6DF;
+    height: 15vh;
+    width: 100%;
+}
+.donno1 h1{
+    text-align: center;
+    padding: 28px;
+    font-size: 35px;
+    font-family: sans-serif;
+}
+
+/* showcase */
+.showcase{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+    padding: 0 100px;
+}
+/* cards */
+.card{
+    width: 450px;
+    position: absolute;
+    text-align: center;
+    transition:
+    transform 0.6s ease,
+    opacity 0.6s ease;
+}
+.card img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    background-color: #ddd;
+    transition: all 0.6s ease;
+}
+.card h1{
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+.card p{
+    margin-top: 10px;
+    font-size: 15px;
+    color: #666;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+.active{
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    z-index: 5;
+}
+.active img{
+    width: 450px;
+    height: 430px;
+}
+
+.left-card{
+    transform: translateX(-430px) scale(0.85);
+    opacity: 0.45;
+    z-index: 1;
+}
+.right-card{
+    transform: translateX(430px) scale(0.85);
+    opacity: 0.45;
+    z-index: 1;
+}
+/* arrow */
+.arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(34, 40, 49, 0.75);
+    backdrop-filter: blur(5px);
+    color: white;
+    font-size: 22px;
+    font-weight: lighter;
+    cursor: pointer;
+    transition: 
+    background 0.3s ease,
+    transform 0.3s ease,
+    opacity 0.3s ease;
+    z-index: 10;
+    opacity: 0.7;
+}
+
+.arrow:hover{
+    background: #393E46;
+    opacity: 1;
+    transform: translateY(-50%) scale(1.08);
+}
+.left{
+    left: 25px;
+}
+.right{
+    right: 25px;
+}
+
+/* donno */
+.donno2{
+    background-image: url(second.jpg);
+    background-size: cover;
+    height: 30vh;
+    width: 100%;
+}
+.donno2 h1{
+    text-align: left;
+    font-size: 48px;
+    padding-top: 42px;
+    padding-left: 50px;
+    color: #fff;
+}
+
+/* about */
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 100px;
+    gap: 50px;
+}
+.display img{
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+}
+.about p{
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.8;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+/* donno */
+.donno3{
+    background-image: url(third.jpg);
+    background-size: cover;
+    height: 25vh;
+    width: 100%;
+}
+.donno3 h1{
+    text-align: center;
+    padding: 60px;
+    font-size: 40px;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+/* contact */
+.contact{
+    padding: 36px 450px;
+}
+.contact p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
